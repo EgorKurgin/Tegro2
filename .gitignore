@@ -1,1 +1,40 @@
+# Build
+build/
+out/
+cmake-build-*/
+
+# IDE
+.vscode/
+.idea/
+*.user
+*.kdev4
+
+# Compiled
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.exe
+*.pdb
+*.ilk
+*.dll
+
+# CMake/clang artifacts
+compile_commands.json
+.cache/
+CMakeCache.txt
+CMakeFiles/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tegro runtime
+*.tcf
+*.sta
+*.dat
+!tests/integration/data/*.dat
+
 .idea/

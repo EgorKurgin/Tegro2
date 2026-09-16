@@ -11,6 +11,28 @@ Tegro implements the following theories to describe interactions:
 * **ET**: Encounter Theory
 * **MET**: Modified Encounter Theory
 * **CMET**: Complete Modified Encounter Theory
+* 
+## Status
+
+🔧 **Active development.** Currently migrating from the legacy
+code base (1997–2026) to a modern C++23 implementation.
+
+## Building
+
+Requirements:
+- MSYS2 with UCRT64 toolchain (Windows) / GCC ≥ 13 / Clang ≥ 17
+- CMake ≥ 3.24
+- Ninja
+
+```bash
+pacman -S mingw-w64-ucrt-x86_64-{gcc,cmake,ninja,git}
+
+git clone https://github.com/EgorKurgin.git
+cd tegro
+cmake --preset debug
+cmake --build --preset debug
+ctest --preset debug
+```
 
 ## Usage Terms & License
 Using this program is subject to compliance with the **CC BY-NC 4.0** (Attribution-NonCommercial) license.
