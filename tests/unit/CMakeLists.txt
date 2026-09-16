@@ -1,5 +1,6 @@
 add_executable(tegro_unit_tests
         test_version.cpp
+        test_linalg.cpp
 )
 
 target_link_libraries(tegro_unit_tests PRIVATE

@@ -1,4 +1,4 @@
-#include <tegro/core/version.hpp>
+#include <version.hpp>
 
 // This file exists to give the static library at least one translation
 // unit. It will be replaced by real implementation files as the modules
