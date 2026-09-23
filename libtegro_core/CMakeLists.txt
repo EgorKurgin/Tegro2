@@ -1,0 +1,8 @@
+add_library(tegro_core
+    src/numerical/vector.cpp 
+)
+
+target_include_directories(tegro_core
+    PUBLIC 
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
