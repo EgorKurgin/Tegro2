@@ -1,13 +1,14 @@
-add_executable(vector_test 
+add_executable(numerical_test 
     vector_test.cpp
+    matrix_test.cpp
 )
 
-target_link_libraries(vector_test
+target_link_libraries(numerical_test
     PRIVATE 
         tegro_core
 )
 
 add_test(
-    NAME vector_test
-    COMMAND vector_test
+    NAME numerical_test
+    COMMAND numerical_test
 )
