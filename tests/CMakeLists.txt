@@ -1,6 +1,7 @@
 add_executable(numerical_test 
     vector_test.cpp
     matrix_test.cpp
+    lu_decomposition_test.cpp
 )
 
 target_link_libraries(numerical_test

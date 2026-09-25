@@ -1,6 +1,7 @@
 add_library(tegro_core
     src/numerical/vector.cpp 
     src/numerical/matrix.cpp
+    src/numerical/algorithm.cpp
 )
 
 target_include_directories(tegro_core
