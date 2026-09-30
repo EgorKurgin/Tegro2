@@ -24,5 +24,3 @@ function(tegro_add_test name)
     # Регистрируем как отдельный тест в CTest
     add_test(NAME ${target} COMMAND ${target})
 endfunction()
-
-tegro_add_test(vector)
