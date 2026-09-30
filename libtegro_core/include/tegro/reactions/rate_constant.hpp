@@ -1,22 +1,26 @@
 #pragma once
 
-#include <cstdfloat>
+#include <tegro/types.hpp>
 
 namespace tegro {
 
 class MonomolecularRate {
     public:
-        virtual std::float64_t at(std::float64_t t) const = 0;
+        virtual ~MonomolecularRate() = default;
+        virtual real K(real t) const = 0;
 };
 
 class ConstantRate : public MonomolecularRate {
     public:
-        ConstantRate(std::float64_t C);
+        explicit ConstantRate(real rate_constant) 
+                    : rate_constant_(rate_constant) {}
         
-        std::float64_t at(std::float64_t) const override;
+        real K(real) const override {
+            return rate_constant_;
+        }
 
     private:
-        std::float64_t C_ = 1.0;
+        real rate_constant_;
 };
 
 }

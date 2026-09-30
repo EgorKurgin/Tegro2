@@ -1,4 +1,6 @@
 add_library(tegro_core
+    src/reactions/reaction.cpp
+    src/time/time_grid.cpp
 )
 
 target_include_directories(tegro_core

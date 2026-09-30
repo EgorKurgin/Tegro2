@@ -11,7 +11,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 option(TEGRO_BUILD_CLI "Build CLI" OFF)
 option(TEGRO_BUILD_GUI "Build GUI" OFF)
-option(TEGRO_BUILD_TESTS "Build Tests" ON)
+option(TEGRO_BUILD_TESTS "Build Tests" OFF)
 
 add_subdirectory(libtegro_core)
 
